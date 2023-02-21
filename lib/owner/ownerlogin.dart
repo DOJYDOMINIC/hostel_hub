@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../owner/ownerpage.dart';
-import '../owner/ownerreg.dart';
+import 'ownerpage.dart';
+import 'ownerreg.dart';
 
 class OwnerLogin extends StatefulWidget {
   const OwnerLogin({Key? key}) : super(key: key);

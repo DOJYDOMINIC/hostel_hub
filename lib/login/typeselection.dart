@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 
-import 'ownerlogin.dart';
+import '../owner/ownerlogin.dart';
 
 class Hostel_hub extends StatelessWidget {
   const Hostel_hub({Key? key}) : super(key: key);
