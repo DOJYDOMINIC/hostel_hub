@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 
+import '../canidate/canidatelogin.dart';
 import '../owner/ownerlogin.dart';
 
 class Hostel_hub extends StatelessWidget {
@@ -36,7 +37,9 @@ class Hostel_hub extends StatelessWidget {
               child: SizedBox(
                 height:MediaQuery.of(context).size.height/6,
                 width: MediaQuery.of(context).size.width/2,
-                child: ElevatedButton(onPressed: (){},style: ElevatedButton.styleFrom(side: BorderSide(color: Colors.white),
+                child: ElevatedButton(onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => canlogin(),));
+                },style: ElevatedButton.styleFrom(side: BorderSide(color: Colors.white),
                     backgroundColor: Colors.transparent),child: Text("CANIDATE",style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),),),
               ),
             ),

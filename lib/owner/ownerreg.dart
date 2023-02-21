@@ -29,7 +29,7 @@ class Ownerreg extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
-                child: TextFormField(
+                child: TextFormField(keyboardType: TextInputType.number,
                     decoration:InputDecoration(
                         hintText: "Phone Number",
                         border: OutlineInputBorder(borderSide: BorderSide(color: Colors.black)))
