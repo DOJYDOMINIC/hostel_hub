@@ -13,10 +13,6 @@ class Hostel_hub extends StatelessWidget {
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
-          // gradient:LinearGradient(
-          // begin: Alignment.topCenter,
-          // end: Alignment.bottomCenter,
-          // colors:[Colors.black,Colors.white,Colors.black]),
             image: DecorationImage(
                 fit: BoxFit.cover,
                 image: AssetImage("assets/images/shobhit-sharma-8TrcnRMap90-unsplash.jpg"))

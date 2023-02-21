@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
 import '../owner/ownerpage.dart';
+import '../owner/ownerreg.dart';
 
 class OwnerLogin extends StatefulWidget {
   const OwnerLogin({Key? key}) : super(key: key);
@@ -29,7 +29,7 @@ bool showpass = true;
                             borderSide: BorderSide(color: Colors.black)),
                         hintText: "User Name"),
                     validator: (username) {
-                      if (username!.isEmpty || !username.contains('@gmail')) {
+                      if (username!.isEmpty || username.length <10) {
                         return 'enter a valid username';
                       } else
                         return null;
@@ -45,7 +45,7 @@ bool showpass = true;
                       hintText: "Passworrd"),
                   obscureText: showpass,
                   validator: (password){
-                    if (password !.isEmpty || password.length <6){
+                    if (password !.isEmpty || password.length <4){
                       return 'Enter a valid password';
                     }else {
                       return null;
@@ -86,19 +86,6 @@ bool showpass = true;
             ],
           ),
         ),
-    );
-  }
-}
-
-class Ownerreg extends StatelessWidget {
-  const Ownerreg({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
-        color: Colors.red,
-      ),
     );
   }
 }
